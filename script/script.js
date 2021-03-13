@@ -18,7 +18,6 @@ function switchTab(tab, form) {
 function validateRegistration() {
   let x = document.getElementById("RegisterEmailInput");
   console.log(x.value);
-  return true;
 }
 
 switchTab(document.querySelector(".activeTab"), "loginForm");
