@@ -15,9 +15,6 @@ function switchTab(tab, form) {
   clickedTab.className += " activeTab";
 }
 
-function validateRegistration() {
-  let x = document.getElementById("RegisterEmailInput");
-  console.log(x.value);
-}
+function validateRegistration() {}
 
 switchTab(document.querySelector(".activeTab"), "loginForm");

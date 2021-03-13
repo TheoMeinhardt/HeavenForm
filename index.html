@@ -32,10 +32,10 @@
             <input type="checkbox" class="form-check-input" id="LoginRememberCheckBox" />
             <label class="form-check-label" for="rememberCheckBox">Remember Me</label>
           </div>
-          <button type="submit" class="btn btn-primary">Log in</button>
+          <button type="submit" form="loginForm" class="btn btn-primary">Log in</button>
         </form>
 
-        <form action="/" onsubmit="validateRegistration()" method="GET" id="registerForm" class="tabContent p-2">
+        <form action="output.html" onsubmit="return validateRegistration()" method="GET" id="registerForm" name="registerForm" class="tabContent p-2">
           <div class="mb-2">
             <label class="form-label" for="EmailInput">Email address *</label>
             <input type="email" class="form-control form-control-sm" id="RegisterEmailInput" required />
@@ -67,7 +67,7 @@
             <label for="formFileSm" class="form-label">Profile Picture</label>
             <input class="form-control form-control-sm" id="RegisterprofilePictureInput" type="file" />
           </div>
-          <button type="submit" class="btn btn-primary">Register</button>
+          <button type="submit" form="registerForm" class="btn btn-primary" id="RegisterSubmitButton">Register</button>
         </form>
       </div>
     </div>
